@@ -1,0 +1,83 @@
+[
+  {
+    "passed": false,
+    "ignored": false,
+    "resource_id": "aws_s3_bucket.invalid",
+    "resource_namespace": "spec/rules/REQUIRED_S3_BUCKET_TAGS/inputs/s3_bucket_tags.tf",
+    "resource_type": "aws_s3_bucket",
+    "severity": "high",
+    "resources": [
+      {
+        "id": "aws_s3_bucket.invalid",
+        "type": "aws_s3_bucket",
+        "namespace": "spec/rules/REQUIRED_S3_BUCKET_TAGS/inputs/s3_bucket_tags.tf",
+        "location": [
+          {
+            "filepath": "spec/rules/REQUIRED_S3_BUCKET_TAGS/inputs/s3_bucket_tags.tf",
+            "line": 14,
+            "column": 1
+          }
+        ],
+        "attributes": [
+          {
+            "path": [
+              "tags",
+              "owner"
+            ],
+            "location": {
+              "filepath": "spec/rules/REQUIRED_S3_BUCKET_TAGS/inputs/s3_bucket_tags.tf",
+              "line": 17,
+              "column": 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "passed": true,
+    "ignored": false,
+    "resource_id": "aws_s3_bucket.valid",
+    "resource_namespace": "spec/rules/REQUIRED_S3_BUCKET_TAGS/inputs/s3_bucket_tags.tf",
+    "resource_type": "aws_s3_bucket",
+    "severity": "high",
+    "resources": [
+      {
+        "id": "aws_s3_bucket.valid",
+        "type": "aws_s3_bucket",
+        "namespace": "spec/rules/REQUIRED_S3_BUCKET_TAGS/inputs/s3_bucket_tags.tf",
+        "location": [
+          {
+            "filepath": "spec/rules/REQUIRED_S3_BUCKET_TAGS/inputs/s3_bucket_tags.tf",
+            "line": 5,
+            "column": 1
+          }
+        ],
+        "attributes": [
+          {
+            "path": [
+              "tags",
+              "classification"
+            ],
+            "location": {
+              "filepath": "spec/rules/REQUIRED_S3_BUCKET_TAGS/inputs/s3_bucket_tags.tf",
+              "line": 8,
+              "column": 3
+            }
+          },
+          {
+            "path": [
+              "tags",
+              "owner"
+            ],
+            "location": {
+              "filepath": "spec/rules/REQUIRED_S3_BUCKET_TAGS/inputs/s3_bucket_tags.tf",
+              "line": 8,
+              "column": 3
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
