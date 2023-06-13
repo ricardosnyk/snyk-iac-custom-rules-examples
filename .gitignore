@@ -11,3 +11,5 @@ opa-debug-js
 *.api-txt
 *.exe
 *.log
+
+.DS_Store
