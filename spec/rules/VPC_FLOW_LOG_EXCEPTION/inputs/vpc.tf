@@ -34,7 +34,7 @@ resource "aws_vpc" "valid2" {
   }
 }
 
-resource "aws_flow_log" "valid2-flow-log" {
+resource "aws_flow_log" "valid2" {
   iam_role_arn    = aws_iam_role.example.arn
   log_destination = aws_cloudwatch_log_group.example.arn
   traffic_type    = "ALL"

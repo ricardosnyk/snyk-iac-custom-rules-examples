@@ -17,15 +17,18 @@ metadata := {
 
 vpcs := snyk.resources("aws_vpc")
 
-acceptable_vpc_tags(vpc) {
+acceptable_vpcs(vpc) {
 	vpc.tags.name == "cloudbank-fix"
+}
+
+acceptable_vpcs(vpc) {
+	logs := snyk.relates(vpc, "aws_vpc.aws_flow_log")[_]
+	count(logs) < 0
 }
 
 deny[info] {
 	vpc := vpcs[_]
-	logs := snyk.relates(vpc, "aws_vpc.aws_flow_log")[_]
-	not acceptable_vpc_tags(vpc)
-	vpc.id != logs.vpc_id
+	not acceptable_vpcs(vpc)
 
 	info := {"primary_resource": vpc}
 }

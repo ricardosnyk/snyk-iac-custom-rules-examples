@@ -1,6 +1,6 @@
 [
   {
-    "passed": true,
+    "passed": false,
     "ignored": false,
     "resource_id": "aws_vpc.invalid",
     "resource_namespace": "spec/rules/VPC_FLOW_LOG_EXCEPTION/inputs/vpc.tf",
@@ -21,7 +21,8 @@
         "attributes": [
           {
             "path": [
-              "tags"
+              "tags",
+              "name"
             ],
             "location": {
               "filepath": "spec/rules/VPC_FLOW_LOG_EXCEPTION/inputs/vpc.tf",
@@ -55,7 +56,8 @@
         "attributes": [
           {
             "path": [
-              "tags"
+              "tags",
+              "name"
             ],
             "location": {
               "filepath": "spec/rules/VPC_FLOW_LOG_EXCEPTION/inputs/vpc.tf",
@@ -68,7 +70,7 @@
     ]
   },
   {
-    "passed": true,
+    "passed": false,
     "ignored": false,
     "resource_id": "aws_vpc.valid2",
     "resource_namespace": "spec/rules/VPC_FLOW_LOG_EXCEPTION/inputs/vpc.tf",
@@ -76,7 +78,7 @@
     "severity": "high",
     "resources": [
       {
-        "id": "aws_flow_log.valid2-flow-log",
+        "id": "aws_flow_log.valid2",
         "type": "aws_flow_log",
         "namespace": "spec/rules/VPC_FLOW_LOG_EXCEPTION/inputs/vpc.tf",
         "location": [
