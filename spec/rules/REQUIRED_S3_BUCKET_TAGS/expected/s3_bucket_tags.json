@@ -22,6 +22,17 @@
           {
             "path": [
               "tags",
+              "Environment"
+            ],
+            "location": {
+              "filepath": "spec/rules/REQUIRED_S3_BUCKET_TAGS/inputs/s3_bucket_tags.tf",
+              "line": 17,
+              "column": 3
+            }
+          },
+          {
+            "path": [
+              "tags",
               "owner"
             ],
             "location": {
@@ -54,6 +65,17 @@
           }
         ],
         "attributes": [
+          {
+            "path": [
+              "tags",
+              "Environment"
+            ],
+            "location": {
+              "filepath": "spec/rules/REQUIRED_S3_BUCKET_TAGS/inputs/s3_bucket_tags.tf",
+              "line": 8,
+              "column": 3
+            }
+          },
           {
             "path": [
               "tags",
