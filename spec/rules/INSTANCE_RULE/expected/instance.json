@@ -1,0 +1,58 @@
+[
+  {
+    "passed": false,
+    "ignored": false,
+    "resource_id": "aws_instance.invalid",
+    "resource_namespace": "spec/rules/INSTANCE_RULE/inputs/instance.tf",
+    "resource_type": "aws_instance",
+    "severity": "critical",
+    "resources": [
+      {
+        "id": "aws_instance.invalid",
+        "type": "aws_instance",
+        "namespace": "spec/rules/INSTANCE_RULE/inputs/instance.tf",
+        "location": [
+          {
+            "filepath": "spec/rules/INSTANCE_RULE/inputs/instance.tf",
+            "line": 12,
+            "column": 1
+          }
+        ],
+        "attributes": [
+          {
+            "path": [
+              "associate_public_ip_address"
+            ],
+            "location": {
+              "filepath": "spec/rules/INSTANCE_RULE/inputs/instance.tf",
+              "line": 15,
+              "column": 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "passed": true,
+    "ignored": false,
+    "resource_id": "aws_instance.valid",
+    "resource_namespace": "spec/rules/INSTANCE_RULE/inputs/instance.tf",
+    "resource_type": "aws_instance",
+    "severity": "critical",
+    "resources": [
+      {
+        "id": "aws_instance.valid",
+        "type": "aws_instance",
+        "namespace": "spec/rules/INSTANCE_RULE/inputs/instance.tf",
+        "location": [
+          {
+            "filepath": "spec/rules/INSTANCE_RULE/inputs/instance.tf",
+            "line": 5,
+            "column": 1
+          }
+        ]
+      }
+    ]
+  }
+]
