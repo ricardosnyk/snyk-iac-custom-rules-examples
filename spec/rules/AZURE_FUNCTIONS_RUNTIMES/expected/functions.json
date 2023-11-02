@@ -1,7 +1,76 @@
 [
   {
-    "passed": true,
+    "passed": false,
     "ignored": false,
-    "severity": "high"
+    "resource_id": "azurerm_linux_function_app.invalid",
+    "resource_namespace": "spec/rules/AZURE_FUNCTIONS_RUNTIMES/inputs/functions.tf",
+    "resource_type": "azurerm_linux_function_app",
+    "severity": "high",
+    "resources": [
+      {
+        "id": "azurerm_linux_function_app.invalid",
+        "type": "azurerm_linux_function_app",
+        "namespace": "spec/rules/AZURE_FUNCTIONS_RUNTIMES/inputs/functions.tf",
+        "location": [
+          {
+            "filepath": "spec/rules/AZURE_FUNCTIONS_RUNTIMES/inputs/functions.tf",
+            "line": 59,
+            "column": 1
+          }
+        ],
+        "attributes": [
+          {
+            "path": [
+              "site_config",
+              0,
+              "application_stack",
+              0
+            ],
+            "location": {
+              "filepath": "spec/rules/AZURE_FUNCTIONS_RUNTIMES/inputs/functions.tf",
+              "line": 69,
+              "column": 7
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "passed": false,
+    "ignored": false,
+    "resource_id": "azurerm_windows_function_app.invalid1",
+    "resource_namespace": "spec/rules/AZURE_FUNCTIONS_RUNTIMES/inputs/functions.tf",
+    "resource_type": "azurerm_windows_function_app",
+    "severity": "high",
+    "resources": [
+      {
+        "id": "azurerm_windows_function_app.invalid1",
+        "type": "azurerm_windows_function_app",
+        "namespace": "spec/rules/AZURE_FUNCTIONS_RUNTIMES/inputs/functions.tf",
+        "location": [
+          {
+            "filepath": "spec/rules/AZURE_FUNCTIONS_RUNTIMES/inputs/functions.tf",
+            "line": 43,
+            "column": 1
+          }
+        ],
+        "attributes": [
+          {
+            "path": [
+              "site_config",
+              0,
+              "application_stack",
+              0
+            ],
+            "location": {
+              "filepath": "spec/rules/AZURE_FUNCTIONS_RUNTIMES/inputs/functions.tf",
+              "line": 53,
+              "column": 7
+            }
+          }
+        ]
+      }
+    ]
   }
 ]
