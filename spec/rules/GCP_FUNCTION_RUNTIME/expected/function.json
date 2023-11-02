@@ -1,0 +1,138 @@
+[
+  {
+    "passed": false,
+    "ignored": false,
+    "resource_id": "google_cloudfunctions_function.invalid",
+    "resource_namespace": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+    "resource_type": "google_cloudfunctions_function",
+    "severity": "high",
+    "resources": [
+      {
+        "id": "google_cloudfunctions_function.invalid",
+        "type": "google_cloudfunctions_function",
+        "namespace": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+        "location": [
+          {
+            "filepath": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+            "line": 18,
+            "column": 1
+          }
+        ],
+        "attributes": [
+          {
+            "path": [
+              "runtime"
+            ],
+            "location": {
+              "filepath": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+              "line": 21,
+              "column": 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "passed": false,
+    "ignored": false,
+    "resource_id": "google_cloudfunctions_function.invalid2",
+    "resource_namespace": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+    "resource_type": "google_cloudfunctions_function",
+    "severity": "high",
+    "resources": [
+      {
+        "id": "google_cloudfunctions_function.invalid2",
+        "type": "google_cloudfunctions_function",
+        "namespace": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+        "location": [
+          {
+            "filepath": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+            "line": 30,
+            "column": 1
+          }
+        ],
+        "attributes": [
+          {
+            "path": [
+              "runtime"
+            ],
+            "location": {
+              "filepath": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+              "line": 33,
+              "column": 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "passed": true,
+    "ignored": false,
+    "resource_id": "google_cloudfunctions_function.valid",
+    "resource_namespace": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+    "resource_type": "google_cloudfunctions_function",
+    "severity": "high",
+    "resources": [
+      {
+        "id": "google_cloudfunctions_function.valid",
+        "type": "google_cloudfunctions_function",
+        "namespace": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+        "location": [
+          {
+            "filepath": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+            "line": 6,
+            "column": 1
+          }
+        ],
+        "attributes": [
+          {
+            "path": [
+              "runtime"
+            ],
+            "location": {
+              "filepath": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+              "line": 9,
+              "column": 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "passed": true,
+    "ignored": false,
+    "resource_id": "google_cloudfunctions_function.valid2",
+    "resource_namespace": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+    "resource_type": "google_cloudfunctions_function",
+    "severity": "high",
+    "resources": [
+      {
+        "id": "google_cloudfunctions_function.valid2",
+        "type": "google_cloudfunctions_function",
+        "namespace": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+        "location": [
+          {
+            "filepath": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+            "line": 42,
+            "column": 1
+          }
+        ],
+        "attributes": [
+          {
+            "path": [
+              "runtime"
+            ],
+            "location": {
+              "filepath": "spec/rules/GCP_FUNCTION_RUNTIME/inputs/function.tf",
+              "line": 45,
+              "column": 3
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
