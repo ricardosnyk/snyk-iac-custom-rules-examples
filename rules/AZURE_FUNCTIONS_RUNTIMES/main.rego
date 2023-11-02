@@ -24,7 +24,7 @@ metadata := {
 azure_function_types := {"azurerm_linux_function_app", "azurerm_windows_function_app"}
 
 # Note: this is a list of actual application stacks. The notion of what is permitted vs. not permitted
-# is solely used as example and a possible custom rule for organizations.
+# is solely used as an example for a possible custom rule for this scenario.
 
 permitted_stacks := [ 
   { "node_version": "14" },
