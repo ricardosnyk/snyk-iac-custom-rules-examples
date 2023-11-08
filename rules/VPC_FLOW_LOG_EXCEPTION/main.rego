@@ -4,6 +4,8 @@ import data.snyk
 
 input_type := "tf"
 
+resource_type := "MULTIPLE"
+
 metadata := {
 	"id": "VPC_FLOW_LOG_EXCEPTION",
 	"severity": "high",
@@ -16,33 +18,28 @@ metadata := {
 }
 
 vpcs := snyk.resources("aws_vpc")
+flow_logs := snyk.resources("aws_flow_log")
+
+has_flow_log := { vpc_id |
+	vpc_id := flow_logs[_].vpc_id
+}
 
 acceptable_vpcs(vpc) {
 	vpc.tags.name == "cloudbank-fix"
 }
 
 acceptable_vpcs(vpc) {
-	logs := snyk.relates(vpc, "aws_vpc.aws_flow_log")[_]
-	count(logs) < 0
+	has_flow_log[vpc.id]
 }
 
 deny[info] {
 	vpc := vpcs[_]
 	not acceptable_vpcs(vpc)
-
-	info := {"primary_resource": vpc}
+	info := {"resource": vpc}
 }
 
 resources[info] {
 	vpc := vpcs[_]
-	info := {"primary_resource": vpc}
+	info := {"resource":vpc}
 }
 
-resources[info] {
-	vpc := vpcs[_]
-	logs := snyk.relates(vpc, "aws_vpc.aws_flow_log")
-	info := {
-		"primary_resource": vpc,
-		"resource": logs[_],
-	}
-}

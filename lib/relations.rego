@@ -13,7 +13,7 @@ relations[info] {
 relations[info] {
 	info := snyk.relation_from_fields(
 		"aws_vpc.aws_flow_log",
-		{"aws_vpc": ["id", "tags"]},
-		{"aws_flow_log": ["vpc_id"]},
+		{"aws_vpc": ["id", "name"]},
+		{"aws_flow_log": ["id", "vpc_id"]},
 	)
 }
